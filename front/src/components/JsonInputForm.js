@@ -17,7 +17,7 @@ function JsonInputForm() {
       setError(null);
 
       // Send POST request to backend using native fetch API
-      const res = await fetch('http://127.0.0.1:5000/bfhl', {
+      const res = await fetch('https://bajaj-dev-challenge.onrender.com/bfhl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
