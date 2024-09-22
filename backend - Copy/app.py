@@ -47,9 +47,9 @@ def handle_post():
     # Generate the response based on the processed data and file validation
     response = {
         "is_success": True,
-        "user_id": "john_doe_17091999",  # Replace with actual user information
-        "email": "john@xyz.com",  # Replace with actual user email
-        "roll_number": "ABCD123",  # Replace with actual roll number
+        "user_id": "john_doe_17091999",  
+        "email": "john@xyz.com", 
+        "roll_number": "ABCD123", 
         "numbers": numbers,
         "alphabets": alphabets,
         "highest_lowercase_alphabet": [highest_lowercase] if highest_lowercase else [],
@@ -67,4 +67,4 @@ def handle_get():
     })
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
